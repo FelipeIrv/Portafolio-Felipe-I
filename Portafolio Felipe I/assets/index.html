@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla"  />
+    <title>Pagina ventas desayunos y almuerzos</title>
+    
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Comienzo barra navegacion -->
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item text-primary" role="presentation">
+          <a
+            class="nav-link "
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >Productos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >Carrito</a
+          >
+        </li>
+      </ul>
+      <!-- Fin barra de navegacion -->
+    </header>
+    <!-- Comienzo alerta agregar o remover productos -->
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+      <!-- Fin alerta agregar remover productos -->
+
+
+      <!-- Comienzo  contenedor home  -->
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+      <section>
+        <h1 class="text-center">Apettiza Casinos</h1>
+        <h2 class="text-center"></h2> La sonrisa es una bienvenida universal</h2>
+      </section>
+        <section class="container">
+        <p class="text-center mt-5 ">Nuestra motivación es una, obtener cada día un sonrisa de nuestros usuarios que reflejen nuestro gran trabajo y atención a los detalles.
+        </p>
+        <section ide="imghome" class="container justify-content-center d-flex mt-5">
+          <img   src="img/Logo.jpg " alt="">
+        </section>
+        <p class=" text-center mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt dolorem veniam fuga nisi at obcaecati suscipit, labore sit voluptatum molestiae ratione sequi. Corporis quod laboriosam sequi quas quisquam nostrum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto incidunt totam quibusdam! Harum dolorem, illum consequuntur tempore nam, ab sapiente temporibus doloribus repellendus nesciunt ipsam! Iusto optio velit suscipit vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore iste itaque vel vero? Ratione tempore cupiditate accusantium nulla? Est in expedita sequi quia corrupti numquam commodi labore praesentium quos magnam.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate at atque quis et eum commodi veniam a voluptatem assumenda, aut voluptatibus adipisci alias ad qui quae recusandae dolore ea. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam ab quia, deleniti placeat consequatur qui doloremque fuga at itaque possimus voluptates facilis delectus, animi earum. Minus harum consequuntur eos repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsam nulla repellat quaerat perspiciatis, nesciunt debitis deserunt eligendi accusamus numquam quisquam similique, veritatis, temporibus iure. Sequi explicabo soluta voluptatibus minus!
+        </p>
+      </section>
+      
+      </div>
+      <!-- fin contenedor home -->
+
+      <!-- inicio contenedor productos  -->
+      <div
+         class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+          <!-- inicio sub titulo  -->
+        <h2 class="h4 m-4 text-primary">Productos</h2>
+        <!-- fin subtitulo -->
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+          
+          <!-- inicio card 1 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Desayuno inglés</h5>
+              <img src="./img/desayuno-ingles-01.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Consiste en huevos fritos, alubias, champiñones, salchichas pequeñas y tomate a la plancha. Este también incluye tostadas, café o té y zumo.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 15</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 1 -->
+
+          <!-- inicio card 2 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Desayuno continental </h5>
+              <img src="./img/desayuno-continental-03.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Este desayuno consiste en tostadas, mermelada, café o té y zumo, también puede incluir platos calientes como huevos revueltos, salchichas y sopas de leche.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 15</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 2 -->
+
+           <!-- inicio card 3 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Desayuno americano</h5>
+              <img src="./img/desayuno-americano-02.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Está compuesto por dos huevos, bacon, salchichas pequeñas, panqueques y salsa de arce. Este también incluye tostadas, café o té y zumo. Con la leche también se pueden tomar cereales.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 18</span></h5>
+                <div class="d-grid gap-3">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 3 -->
+
+          <!-- inicio card 4 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Desayuno vienés</h5>
+              <img src="./img/desayuno-vienes-04.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Está compuesto por huevos cocidos en un vaso, panecillos, un plato de carne, mermelada o miel, y café con crema o té, zumo o agua</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 16</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 4 -->
+
+          <!-- inicio card 5 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Almuerzo 1</h5>
+              <img src="./img/pollo arvejado-03.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Pollo arvejado</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 10</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 5 -->
+
+          <!-- inicio card 6 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Almuerzo 2</h5>
+              <img src="./img/pastel de papas-01.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Pastel de papas</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 12</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 6 -->
+
+          <!-- inicio card 7 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Almuerzo 3</h5>
+              <img src="./img/tomatican-02.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Tomaticán</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 12</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 7 -->
+
+          <!-- inicio card 8 -->
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Almuerzo 4</h5>
+              <img src="./img/charquicán-04.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text text-white-50 description">Charquicán</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 12</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir a Carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin card 8 -->
+        </div>
+      </div>
+       <!-- fin contenedor productos -->
+
+       <!-- inicio contenedor carrito -->
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">#</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          
+        </tbody>
+      </table>
+      <br><br>
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- fin contenedor carrito  -->
+
+     <!-- inicio footer -->
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">Copyright by Apettiza - Servicio de alimentación SPA</p>
+    </footer>
+    <!-- fin footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/javascrip.js"></script>
+  </body>
+</html>
